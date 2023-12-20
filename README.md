@@ -5,6 +5,7 @@ Using SkiaSharp just like using Unity.
 This project is still being written and could go through a lot of big changes.
 ## Usage
 ```csharp
+var rect = new Rect(0, 0, 768, 1024);
 var scene = new Scene();
 
 var gameObject = new GameObject("Base");
@@ -15,7 +16,6 @@ gameObject.AddComponent<Canvas>();
 
 scene.AddGameObject(gameObject);
 
-var rect = new Rect(0, 0, 768, 1024);
 using var resultImage = scene.Capture(rect);
 ```
 ## LICENSE
